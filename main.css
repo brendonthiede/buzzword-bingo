@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC");
+
+body {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+label {
+    display: inline-block;
+    width: 18em;
+}
+
+#cards {
+    width: 766px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    border: 1px black solid;
+}
+
+th {
+    height: 30px;
+}
+
+thead {
+    background-color: #ececec;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.card-word {
+    height: 150px;
+    width: 150px;
+}
+
+.free {
+    background-image: url(assets/free.jpg);
+    background-size: cover;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    div {
+        page-break-inside: avoid;
+    }
+}
